@@ -27,8 +27,8 @@ a[href^=tel] {
 ================================================== */
 
 .top-bar {
-  padding: 8px 0;
-  background: #ebebeb;
+
+  background: #0E519B;
   position: relative;
 }
 
@@ -80,7 +80,7 @@ ul.top-info li p.info-text {
     display: inline-block;
     padding: 0;
     a {
-      color: #2c2c2c;
+      color: #fff;
       font-size: 14px;
       transition: 400ms;
       padding: 9px 12px;
@@ -118,11 +118,15 @@ ul.top-info li p.info-text {
   position: relative;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
 }
+  .custom-navbar{
 
-.header-one,
-.header-one .site-navigation {
-  background: #23282d;
+    padding-left: 100px;
+  @include desktop {
+    padding-left: 20px;
+  }
 }
+.header-one,
+
 .header-one .navbar-collapse {
   padding-left: 0;
 }
@@ -135,12 +139,22 @@ ul.top-info li p.info-text {
   ul.navbar-nav>li {
     padding-left: 0;
     padding-right: 30px;
-    @include desktop {
+        @include desktop {
       padding-right: 0;
     }
   }
   .logo-area {
     padding: 30px 0;
+    padding-left:100px;
+    padding-right:100px;
+  }
+  @include tablet {
+
+    .logo-area {
+
+      padding-left:10px;
+      padding-right:10px;
+    }
   }
 }
 
@@ -180,7 +194,7 @@ ul.navbar-nav>li.active>a {
 /*-- Logo --*/
 .logo img {
   width: auto;
-  height: 35px;
+  height: 100px;
 }
 .header-two .logo img {
   height: 30px;
@@ -190,6 +204,11 @@ ul.navbar-nav>li.active>a {
 
 .header-right {
   float: right;
+  @include tablet {
+    display: flex;
+    justify-content: space-around;
+
+  }
 }
 
 ul.top-info-box {
@@ -201,7 +220,7 @@ ul.top-info-box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
   }
 }
 
@@ -238,6 +257,7 @@ ul.top-info-box li:last-child {
 
 ul.top-info-box li.last {
   border-right: 0;
+
 }
 
 ul.top-info-box li .info-box span.info-icon {
@@ -311,6 +331,7 @@ ul.top-info-box>li.nav-search i {
   border-radius: 0;
   border: 0;
   margin-bottom: 0;
+  justify-content:flex-end;
 }
 
 .navbar-toggler {
@@ -318,19 +339,22 @@ ul.top-info-box>li.nav-search i {
   padding: 6px;
   border-radius: 0;
   font-size: 1rem;
-  background: $color-primary;
+  background: #ffffff;
+
   &:focus {
     outline: 0;
   }
 }
 .navbar-dark .navbar-toggler-icon,
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='%23777777' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
 }
 
 ul.navbar-nav>li:hover>a,
 ul.navbar-nav>li.active>a {
   color: $color-primary;
+  border-bottom:3px solid $color-primary;
   position: relative;
 }
 
@@ -376,13 +400,14 @@ ul.navbar-nav>li>a i {
 @include desktop {
   ul.navbar-nav>li>a i {
     float: right;
-    background: #222;
+    background: #fff;
     padding: 6px 10px;
     margin-top: 7px;
+    color: $color-primary;
   }
   .header-two {
     ul.navbar-nav>li>a i {
-        color: #fff;
+        color:$color-primary;
     }
     ul.navbar-nav>li.active>a i,
     ul.navbar-nav>li>a.active i {
@@ -406,7 +431,7 @@ ul.navbar-nav>li>a {
   font-size: 14px;
   margin: 0;
   line-height: 40px;
-  padding: 30px 0;
+  padding: 0px 0 !important;
   -webkit-transition: 350ms;
   -moz-transition: 350ms;
   -o-transition: 350ms;
@@ -456,10 +481,7 @@ ul.navbar-nav>li>a {
   border-top: 2px solid $color-primary;
   padding: 0 20px;
   margin: 0;
-  box-shadow: 0 6px 12px rgba(0,0,0,.175);
-  @include desktop {
-    box-shadow: 0 6px 12px rgba(0,0,0,.05);
-  }
+
 }
 
 .dropdown-menu-large {
@@ -478,6 +500,7 @@ ul.navbar-nav>li>a {
 
 .dropdown-menu-large>li>ul>li.active>a {
   color: $color-primary !important;
+
 }
 
 .navbar-nav>li>.dropdown-menu a {
@@ -492,7 +515,7 @@ ul.navbar-nav>li>a {
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
-  padding: 15px 0;
+  padding: 8px 0;
   letter-spacing: .3px;
   border-bottom: 1px solid #e5e5e5;
   color: #333333;

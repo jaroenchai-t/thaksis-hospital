@@ -291,12 +291,23 @@
 /* Action style box */
 
 .call-to-action-box {
-  margin-top: -50px;
+  margin-top: -90px;
 }
 
 .call-to-action-box .action-style-box {
-  background: $color-primary;
-  padding: 30px;
+  .action-button-container{
+    max-width:220px;
+    height:130px;
+    label{
+      font-size: small;
+    }
+  }
+  .action-button-container:first-child{
+    border-radius:25px 0 0;
+  }
+  .action-button-container:last-child{
+    border-radius:0 25px 0 0;
+  }
 }
 
 .action-title {
@@ -347,7 +358,7 @@
 }
 
 .featured-tab .nav-tabs>li>a {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'tahoma','Roboto Slab', serif;
   background: #272d33;
   color: #fff;
   text-shadow: none;
@@ -518,7 +529,7 @@
 }
 
 
-/* Service box 
+/* Service box
 
 .ts-service-box .ts-service-icon i {
   font-size: 24px;
@@ -2245,4 +2256,72 @@ label {
 .error-page .error-body .btn {
   margin-top: 30px;
   font-weight: 700;
+}
+.btn-action{
+
+  border: 1px solid white;
+  font-size: 10px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  height: 20px;
+  cursor:pointer;
+  div{
+    margin-top:-5px;
+  }
+}
+
+.clinic-service{
+  max-width:200px;
+
+
+  p{
+    font-size: smaller;
+    line-height: 18px;
+  }
+  .btn-action-2{
+
+    border: 1px solid #ddd;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    height: 20px;
+    cursor:pointer;
+    div{
+      margin-top:-5px;
+
+    }
+  }
+}
+
+#blog-demo{
+  .blog .carousel-indicators {
+    left: 0;
+    top: auto;
+      bottom: -70px;
+
+  }
+
+  /* The colour of the indicators */
+  .blog .carousel-indicators li {
+      background: $color-secondary;
+      border-bottom:0px;
+      border-top:0px;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+
+  }
+
+  .blog .carousel-indicators .active {
+  background: $color-primary;
+  }
+}
+.service-title{
+  color: $color-secondary;
+  font-weight:100;
+  font-size:x-large;
 }
