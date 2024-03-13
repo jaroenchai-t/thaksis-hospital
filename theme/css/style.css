@@ -2381,12 +2381,12 @@ img.testimonial-thumb {
 ================================================== */
 /*- Footer common */
 .footer {
-  background-color: #0d0d0d;
-  color: #999;
+  background-color: #0E519B;
+  color: #fff;
 }
 
 .footer-main {
-  padding: 80px 0 60px;
+  padding: 30px 0 40px;
 }
 
 .footer .widget-title {
@@ -2455,6 +2455,19 @@ img.testimonial-thumb {
   color: #0E519B;
 }
 
+.footer-widget ul.list-bullet li {
+  font-size: small;
+}
+
+.footer-address address {
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.footer-address label {
+  font-size: small;
+}
+
 .working-hours {
   padding-right: 10px;
 }
@@ -2466,12 +2479,18 @@ img.testimonial-thumb {
 /*-- Copyright --*/
 .copyright {
   background: #0E519B;
+  border-top: 1px solid #fff;
   color: #111;
-  padding: 25px 0;
   position: relative;
   z-index: 1;
   font-weight: 600;
   font-size: 12px;
+  max-height: 26px;
+}
+.copyright .copyright-info {
+  color: #fff;
+  font-weight: 100;
+  font-size: smaller;
 }
 
 .footer-menu ul li {
@@ -3392,49 +3411,55 @@ label {
 }
 
 .clinic-service {
-  max-width: 200px;
+  max-width: 280px;
 }
-.clinic-service p {
+
+.clinic-service p, .clinic-service-2 p {
   font-size: smaller;
   line-height: 18px;
 }
-.clinic-service .btn-action-2 {
+.clinic-service .btn-action-2, .clinic-service-2 .btn-action-2 {
   border: 1px solid #ddd;
   font-size: 13px;
   font-weight: bold;
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 15px;
-  height: 20px;
+  height: 26px;
   cursor: pointer;
 }
-.clinic-service .btn-action-2 div {
-  margin-top: -5px;
+.clinic-service .btn-acive, .clinic-service-2 .btn-acive {
+  background: #527CAE;
+  color: #fff;
 }
 
-#blog-demo {
-  /* The colour of the indicators */
-}
-#blog-demo .blog .carousel-indicators {
-  left: 0;
-  top: auto;
-  bottom: -70px;
-}
-#blog-demo .blog .carousel-indicators li {
-  background: #527CAE;
-  border-bottom: 0px;
-  border-top: 0px;
-  border-radius: 50%;
-  width: 8px;
-  height: 8px;
-}
-#blog-demo .blog .carousel-indicators .active {
-  background: #0E519B;
+.txt-secondary {
+  color: #527CAE;
 }
 
 .service-title {
   color: #527CAE;
   font-weight: 100;
   font-size: x-large;
+}
+
+/*========= Swiper ===========*/
+.swiper {
+  min-height: 350px;
+}
+.swiper .swiper-slide {
+  text-align: -webkit-center;
+}
+.swiper .swiper-pagination-bullet-active {
+  background: #527CAE;
+}
+
+.swiper-package {
+  min-height: 370px;
+}
+@media (max-width: 767px) {
+  .swiper-package {
+    min-height: 390px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
