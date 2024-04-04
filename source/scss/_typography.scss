@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
   color: #527CAE;
-  font-weight: 700;
+  font-weight: 100;
   font-family: 'Kanit','Montserrat', sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased !important;
@@ -66,5 +66,5 @@ h5 {
 }
 
 .txt-secondary{
-  color: $color-secondary;
+  color: $color-secondary !important;
 }

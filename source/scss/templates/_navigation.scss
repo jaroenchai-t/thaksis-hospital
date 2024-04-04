@@ -326,6 +326,9 @@ ul.top-info-box > li.nav-search i {
   border: 0;
   margin-bottom: 0;
   justify-content: flex-end;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 30px;
 }
 
 .navbar-toggler {
@@ -433,7 +436,7 @@ ul.navbar-nav > li > a {
 
 .navbar-light ul.navbar-nav > li > a {
   color: #555 !important;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /* Dropdown */

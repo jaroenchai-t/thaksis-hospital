@@ -134,3 +134,44 @@ const swiper4 = new Swiper('.swiper-package-mobile', {
 
 
 });
+
+
+const swiper5 = new Swiper('.doctor-swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  spaceBetween: 15,
+  slidesPerView:3,
+   // Responsive breakpoints
+   breakpoints: {
+    // when window width is >= 0px
+    0: {
+      slidesPerView: 1,
+
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+
+    },
+     // when window width is >= 800px
+     800: {
+      slidesPerView: 3,
+
+    }
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    dynamicBullets:true,
+    dynamicMainBullets:1
+  },
+
+
+});
