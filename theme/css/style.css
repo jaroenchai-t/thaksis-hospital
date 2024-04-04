@@ -42,7 +42,7 @@ h4,
 h5,
 h6 {
   color: #527CAE;
-  font-weight: 700;
+  font-weight: 100;
   font-family: "Kanit", "Montserrat", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased !important;
@@ -84,7 +84,7 @@ h5 {
 }
 
 .txt-secondary {
-  color: #527CAE;
+  color: #527CAE !important;
 }
 
 /* Global styles
@@ -510,6 +510,19 @@ a[href^=tel] {
   text-decoration: none;
 }
 
+.custom-alert {
+  position: relative;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.custom-alert-success {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
 /* Button */
 .btn {
   font-size: 13px;
@@ -916,6 +929,9 @@ ul.top-info-box > li.nav-search i {
   border: 0;
   margin-bottom: 0;
   justify-content: flex-end;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 30px;
 }
 
 .navbar-toggler {
@@ -1019,7 +1035,7 @@ ul.navbar-nav > li > a {
 
 .navbar-light ul.navbar-nav > li > a {
   color: #555 !important;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 /* Dropdown */
