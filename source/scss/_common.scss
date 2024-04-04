@@ -47,7 +47,7 @@ a:hover {
 }
 
 a.read-more {
-  color: #ffb600;
+  color: $color-primary;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -58,10 +58,18 @@ a.read-more:hover {
 
 section,
 .section-padding {
-  padding: 70px 0;
   position: relative;
-}
 
+}
+.section-container{
+  padding: 0px;
+}
+.custom-row-padding{
+  padding-top: 66px;
+  .col-12{
+    margin: 0px;
+  }
+}
 .no-padding {
   padding: 0;
 }
@@ -120,7 +128,7 @@ a:focus {
   color: #fff;
 }
 
-.dark-bg h2, 
+.dark-bg h2,
 .dark-bg h3{
   color: #fff;
 }
@@ -188,7 +196,7 @@ a:focus {
 }
 
 .dropcap.primary {
-  background: #ffb600;
+  background: $color-primary;
   color: #fff;
 }
 
@@ -283,7 +291,7 @@ a:focus {
 
 .form-control:focus {
   box-shadow: none;
-  border: 1px solid #ffb600;
+  border: 1px solid $color-primary;
 }
 
 hr {
@@ -377,7 +385,7 @@ cite {
   font-family: "Font Awesome 5 Free";
   content: "\f138";
   margin-right: 10px;
-  color: #ffb600;
+  color: $color-primary;
   font-size: 12px;
 }
 
@@ -389,7 +397,7 @@ ul.list-arrow li:before {
   font-family: "Font Awesome 5 Free";
   content: "\f105";
   margin-right: 10px;
-  color: #ffb600;
+  color: $color-primary;
   font-size: 16px;
   font-weight: bold;
 }
@@ -398,7 +406,7 @@ ul.list-check li:before {
   font-family: "Font Awesome 5 Free";
   content: "\f00c";
   margin-right: 10px;
-  color: #ffb600;
+  color: $color-primary;
   font-size: 14px;
 }
 

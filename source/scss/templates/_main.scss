@@ -296,17 +296,33 @@
 
 .call-to-action-box .action-style-box {
   .action-button-container{
-    max-width:220px;
-    height:130px;
+    max-width:310px;
+    height:150px;
     label{
-      font-size: small;
+      font-size: medium;
+      text-align:center;
+    }
+    @include mobile {
+      label{
+        font-size: larger;
+      }
+      .btn-white{
+        display:none;
+      }
+
     }
   }
   .action-button-container:first-child{
     border-radius:25px 0 0;
+    @include mobile {
+      border-radius:0 0 0;
+    }
   }
   .action-button-container:last-child{
     border-radius:0 25px 0 0;
+    @include mobile {
+      border-radius:0 0 0;
+    }
   }
 }
 
@@ -1206,7 +1222,9 @@ img.testimonial-thumb {
 /* Footer
 ================================================== */
 
-
+.footer-container{
+  margin-top:70px;
+}
 /*- Footer common */
 
 .footer {
@@ -2275,82 +2293,135 @@ label {
   margin-bottom: 20px;
 }
 
-.error-page .error-body .btn {
-  margin-top: 30px;
-  font-weight: 700;
-}
-.btn-action{
-
-  border: 1px solid white;
-  font-size: 10px;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 15px;
-  height: 20px;
-  cursor:pointer;
-  div{
-    margin-top:-5px;
-  }
-}
 .clinic-service{
   max-width:280px;
-}
-.clinic-service-2{
-
-}
-
-.clinic-service,.clinic-service-2{
-
-
-
-  p{
-    font-size: smaller;
-    line-height: 18px;
+  .font-weight-bold{
+    padding-top:10px;
   }
-  .btn-action-2{
-
-    border: 1px solid #ddd;
-    font-size: 13px;
-    font-weight: bold;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
-    height: 26px;
-    cursor:pointer;
-    div{
-
-
-    }
+  .img-active{
+    display:none;
   }
-  .btn-acive{
+}
+.clinic-service:hover{
+  .img-active{
+    display:block;
+  }
+  .img-logo{
+    display:none;
+  }
+  .btn{
     background:$color-secondary;
-    color:#fff;
-  }
-}
+    div{
+      color:#fff;
+    }
 
-.txt-secondary{
-  color: $color-secondary;
+  }
+  .font-weight-bold{
+    color:$color-secondary;
+  }
 }
 .service-title{
   color: $color-secondary;
   font-weight:100;
   font-size:x-large;
+  margin-top:68px;
+  margin-bottom:33px;
 }
 /*========= Swiper ===========*/
 .swiper {
-  min-height:350px;
+  /*min-height:350px;*/
   .swiper-slide{
     text-align: -webkit-center;
+    .font-weight-bold {
+      font-size:larger;
+
+    }
   }
   .swiper-pagination-bullet-active{
     background:$color-secondary
   }
 }
+
+.swiper-pagination{
+  bottom:0px !important;
+}
+.swiper-wrapper{
+  padding-bottom:20px;
+}
 .swiper-package{
   min-height:370px;
+  @include desktop {
+
+    display:none;
+  }
+
+}
+.articles-swiper{
+ /* min-height:400px; */
+}
+
+.clinic-service-2:hover{
+.font-weight-bold{
+  color:$color-secondary;
+
+}
+  .btn{
+    background:$color-secondary;
+    div{
+      color:#fff;
+    }
+
+  }
+}
+
+.swiper-package-mobile{
+  display:none;
+  @include desktop {
+
+    display:block;
+    .clinic-service-2{
+      min-height:400px;
+      div.flex-wrap{
+        justify-content:space-around;
+      }
+    }
+
+  }
+  @include mobile {
+
+
+    .clinic-service-2{
+      min-height:450px;
+      div.flex-wrap{
+        justify-content:space-around;
+      }
+    }
+
+  }
+}
+.aep-content{
+  @include mobile {
+    flex-direction:column;
+      img{
+      align-self:center;
+      padding-bottom:10px;
+    }
+  }
+  .media-body{
+    align-self: center;
+  }
+}
+.footer-mobile{
+  display:none;
   @include tablet {
 
-    min-height:390px;
+    display:block;
+  }
+}
+.footer-lab{
+
+  @include tablet {
+
+    display:none;
   }
 }

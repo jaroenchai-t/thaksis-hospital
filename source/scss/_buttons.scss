@@ -1,48 +1,64 @@
 /* Button */
+.btn{
+  font-size: 13px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  height: 26px;
+  border: 1px solid #ddd;
+  cursor:pointer;
+  div{
+
+    margin-top: -3px;
+    font-weight: 100;
+    color: #555;
+
+  }
+}
 .btn {
   &:active,
   &:focus {
-      box-shadow: none !important;
+    background:$color-primary;
   }
+
 }
 .btn-primary,
 .btn-dark {
-  border: 0;
-  border-radius: 3px;
-  padding: 12px 20px 10px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  font-family: $font-secondary;
-  transition: 350ms;
-  font-size: 14px;
-  @include tablet {
-      font-size: 13px;
+  border: 1px solid #ddd;
+  div{
+    color:#fff;
   }
 }
 
 .btn-white.btn-primary {
   background: #fff;
-  color: #ffb600;
+  color: $color-secondary;
 }
 
 .btn-primary {
-  background: #ffb600;
+  background:$color-secondary;
 }
 
 .btn-dark {
   background: #23282d;
 }
-
+.btn-white:hover{
+  background:$color-primary;
+  div{
+    color:#fff;
+  }
+}
 .btn-primary:hover,
 .btn-dark:hover,
+
 .btn-white.btn-primary:hover {
-  background: #111;
+  background: $color-primary;
   color: #fff;
   &:active,
   &:focus {
       color: #fff;
-      background-color: #111 !important;
+      background-color: $color-primary !important;
   }
 }
 
