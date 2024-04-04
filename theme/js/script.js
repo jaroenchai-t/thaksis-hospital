@@ -109,7 +109,7 @@ jQuery(function ($) {
 				$('.site-navigation .navbar-collapse').css('max-height', 'calc(100vh - ' + navbarHeight + 'px)');
 			}
 		}
-		navbarDropdown();
+	//	navbarDropdown();
 
 
 		// back to top

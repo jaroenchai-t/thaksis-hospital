@@ -145,36 +145,29 @@
     <div class="container-fluid">
         <div class="row">
           <div class="col-lg-12 navbar-container">
-              <nav class="navbar navbar-expand-lg navbar-light bg-white p-0">
+              <nav class="navbar navbar-expand-lg navbar-light bg-white">
 
 
                 <div id="navbar-collapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav mr-auto">
-                      <li class="nav-item dropdown active">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">หน้าหลัก <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
+                      <li class="nav-item dropdown">
+                          <a href="/index.html" class="nav-link dropdown-toggle">หน้าหลัก <i class="fa fa-angle-down"></i></a>
+                          <!-- <ul class="dropdown-menu" role="menu">
                             <li class="active"><a href="index.html">หน้าหลัก</a></li>
                             <li><a href="index.html">หน้าหลัก 2</a></li>
-                          </ul>
+                          </ul> -->
                       </li>
 
                       <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">คลินิกเฉพาะทาง <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="index.html">คลินิกเฉพาะทาง 1</a></li>
-                            <li><a href="index.html">คลินิกเฉพาะทาง 2</a></li>
-                            <li><a href="index.html">คลินิกเฉพาะทาง 3</a></li>
-                            <li><a href="index.html">คลินิกเฉพาะทาง 4</a></li>
-                            <li><a href="index.html">คลินิกเฉพาะทาง 5</a></li>
-                          </ul>
+                          <a href="/specialized-clinic-2.html" class="nav-link dropdown-toggle">คลินิกเฉพาะทาง <i class="fa fa-angle-down"></i></a>
                       </li>
 
                       <li class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">บริการทางการแพทย์ <i class="fa fa-angle-down"></i></a>
-                          <ul class="dropdown-menu" role="menu">
+                          <a href="/service.html" class="nav-link dropdown-toggle">บริการทางการแพทย์ <i class="fa fa-angle-down"></i></a>
+                          <!-- <ul class="dropdown-menu" role="menu">
                             <li><a href="index.html">บริการทางการแพทย์ 1</a></li>
                             <li><a href="index.html">บริการทางการแพทย์ 2</a></li>
-                          </ul>
+                          </ul> -->
                       </li>
 
                       <li class="nav-item dropdown">
@@ -243,7 +236,7 @@
   <!--/ Navigation end -->
 </header>
 <!--/ Header end -->
-
+ 
 <div id="banner-area" class="banner-area" style="background-image:url(images/specialized-clinic/img-Specialized-Clinic-Top-Banner.jpg)">
   <div class="banner-text">
     <div class="container">
@@ -258,325 +251,1163 @@
     </div><!-- Container end -->
   </div><!-- Banner text end -->
 </div><!-- Banner area end --> 
-<!-- Link Swiper's CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<style>
+  .swiper-pagination-bullet {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #527CAE;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #93B38C !important;
+    border: 1px solid #93B38C;
+  }
+  .special-clinic{
+    padding-bottom: 5rem;
+  }
+</style>
+
 
 
 <section class="section-container">
 
-  <div class="container">
-    <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper special-clinic">
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
+      <div class="swiper-slide">
+        <div class="container">
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
+      
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-12 col-md">
+              <div class="clinic-service">
+                <div class="d-flex flex-column align-items-center mb-3">
+                  <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
+                  <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
+                  <label class="font-weight-bold">คลีนิกเต้านม</label>
+                  <p>
+                    บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
+                    เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
+                    ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
+                  </p>
+                  <div class="btn btn-white">
+                    <div>อ่านรายละเอียด</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row justify-content-center mt-5" style="text-align: -webkit-center">
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-md">
-        <div class="clinic-service">
-          <div class="d-flex flex-column align-items-center mb-3">
-            <img width="120px" class="img-logo" src="images/icon-image/icon-Breast-Clinic.png">
-            <img width="120px" class="img-active" src="images/icon-image/icon-Breast-Clinic-Over.png">
-            <label class="font-weight-bold">คลีนิกเต้านม</label>
-            <p>
-              บริการตรวยผู้ป่วยนอก โรคที่เกี่ยวกับ
-              เต้านมโดยเฉพาะ วินิจฉัยคัดกรองมะเร็ง
-              ตรวจชิ้นเนื้อ ติดตามหลังผ่าตัด
-            </p>
-            <div class="btn btn-white">
-              <div>อ่านรายละเอียด</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="swiper-pagination txt-secondary mt-5"></div>
   </div>
+  
   
 </section>
 
-<section class="section-container mt-5">
-  <!-- Swiper -->
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
+ 
 
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-<!-- Initialize Swiper -->
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
-      },
-    },
-  });
-</script>
 
   <div class="footer-container">
     <footer id="footer" class="footer">
@@ -708,9 +1539,23 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script src="js/index.js"></script>
+  <script src="js/script.js"></script>
   </div><!-- Body inner end -->
   </body>
 
   </html>
 
 
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  });
+</script>
