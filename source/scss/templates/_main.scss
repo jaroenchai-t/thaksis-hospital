@@ -2427,6 +2427,7 @@ label {
 }
 .doctor-search{
   line-height: 1.2rem;
+  text-align: left;
   .text-icon-detail{
     font-size:smaller;
     opacity: 0.3;
@@ -2437,4 +2438,27 @@ label {
     width: 60%;
    
   }
+}
+.swiper-boble-style{
+
+  .swiper-pagination-bullet {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #527CAE;
+  }
+  
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #93B38C !important;
+    border: 1px solid #93B38C;
+  }
+}
+
+.special-clinic{
+  padding-bottom: 5rem;
 }
