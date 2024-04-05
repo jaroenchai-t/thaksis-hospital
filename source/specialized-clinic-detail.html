@@ -1,0 +1,46 @@
+@@include('header.htm') @@include('blocks/navigation-1.htm')
+@@include('blocks/specialized-clinic-header.htm',{"title": "คลินิกเฉพาะทาง", "text" : "เรามีคลินิกเฉพาะทางที่มีแพทย์ผู้เชี่ยวชาญเฉพาะทางดังนี้"})
+
+<style>
+  .swiper-pagination-bullet {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 12px;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid #527CAE;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: #fff;
+    background: #93B38C !important;
+    border: 1px solid #93B38C;
+  }
+  .special-clinic{
+    padding-bottom: 5rem;
+  }
+</style>
+
+<section class="section-container">
+  asdf
+</section>
+
+<section class="section-container">
+  asdf
+</section>
+
+
+@@include('footer.htm')
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  });
+</script>
