@@ -274,19 +274,52 @@ a:focus {
   height: 100%;
   border: 0;
 }
+input::placeholder {
+  opacity: 0.1;
+  color: #ced4da !important;
+}
 
 
 /* Input form */
-
+form img.icon {
+  position: absolute;
+  top: 40px;
+  right:  30px;
+  color: blue;
+  font-size: 22px;
+  z-index: 9999;
+  min-width: 25px;
+  max-width: 25px;
+}
+.form-group {
+  label{
+    font-size: 1.2rem;
+  }
+}
+.input-group-container{
+  position: relative;
+  img.icon {
+    position: absolute;
+    top: 5px;
+    right:  10px;
+    color: blue;
+    font-size: 22px;
+    z-index: 9999;
+    min-width: 25px;
+    max-width: 25px;
+  }
+}
 .form-control {
   box-shadow: none;
   border: 1px solid #dadada;
   padding: 5px 20px;
-  height: 44px;
+  height: 35px;
   background: none;
   color: #959595;
   font-size: 14px;
-  border-radius: 0;
+  border-radius: 20px;
+  position: relative;
+
 }
 
 .form-control:focus {
