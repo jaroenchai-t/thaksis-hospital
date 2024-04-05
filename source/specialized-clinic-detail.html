@@ -2,45 +2,217 @@
 @@include('blocks/specialized-clinic-header.htm',{"title": "คลินิกเฉพาะทาง", "text" : "เรามีคลินิกเฉพาะทางที่มีแพทย์ผู้เชี่ยวชาญเฉพาะทางดังนี้"})
 
 <style>
-  .swiper-pagination-bullet {
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 25px;
-    font-size: 12px;
-    opacity: 1;
-    background: rgba(0, 0, 0, 0);
-    border: 1px solid #527CAE;
-  }
-
-  .swiper-pagination-bullet-active {
-    color: #fff;
-    background: #93B38C !important;
-    border: 1px solid #93B38C;
-  }
-  .special-clinic{
-    padding-bottom: 5rem;
-  }
+.banner-area-medical-team {
+  position: relative;
+  min-height: 420px;
+  color: #fff;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #eff1f0;
+}
 </style>
 
 <section class="section-container">
-  asdf
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <img width="100%" src="images/specialized-clinic-img/img-Specialized-Clinic-Penis.jpg">
+      </div>
+      <div class="col-12 col-lg-6">
+        <h1>อวัยวะเพศชาย</h1>
+        <p>
+          ศูนย์ทางเดินปัสสาวะ ให้บริการตรวจวินิจฉัย และรักษาโรคเกี่ยวกับระบบทางเดิน
+          ปัสสาวะ นำเทคโนโลยีทางการแพทย์ และเครื่องมือพิเศษที่ทันสมัย เพื่อใช้ในการ
+          ตรวจวินิจฉัยและทำการรักษา โดยแพทย์ผู้เชี่ยวชาญเฉพาะทาง และทีมสหสาขาที่
+          มีความรู้ความชำนาญในการรักษาโรคเกี่ยวกับทางเดินปัสสาวะ มีการประเมินคัด
+          กรองอาการ ในขั้นตอนการตรวจวินิจฉัย พร้อมให้ความรู้ความเข้าใจเกี่ยวกับโรค
+          และติดตามผลการรักษาอย่างต่อเนื่อง เพื่อความปลอดภัยของผู้ป่วย ด้วยการ
+          บริการที่มีคุณภาพตามมาตรฐานระดับสากล
+        </p>
+
+        <div class="row">
+          <div class="col-2">
+            <img width="50px" src="images/specialized-clinic-img/img-icon-hospital.jpg">
+          </div>
+          <div class="col-10">
+            <p>as;ldf</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-container banner-area-medical-team">
+  <div class="container ">
+    <div class="row text-left">
+      <div class="col-12">
+        <h2 class="service-title" style="color: #555555;">ทีมแพทย์</h2>
+      </div>
+    </div>
+    
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper special-clinic">
+        <div class="container">
+          <div class="row justify-content-center" style="text-align: -webkit-center">
+            @@loop('blocks/medical-team.htm', [
+            {"css":"col-12 col-md","medicalName": "นพ.ภูมิวิชญ์ ขวัญเมือง", "medicalImg" : "images/specialized-clinic-img/img-doctor-PooMiVit-bg-white.png"},
+            {"css":"col-12 col-md","medicalName": "พญ.ราริณี ตั้งกิจวาระฐี ", "medicalImg" : "images/specialized-clinic-img/img-doctor-Rarinee-bg-white.png"},
+            {"css":"col-12 col-md","medicalName": "นพ.ดิเรก เอกบวรวงศ์ ", "medicalImg" : "images/specialized-clinic-img/img-doctor-Dirag-bg-white.png"},
+            {"css":"col-12 col-md","medicalName": "นพ.จิม กำภู ณ อยุธยา ", "medicalImg" : "images/specialized-clinic-img/img-doctor-Jim-Gumpoo-bg-white.png"},
+            {"css":"col-12 col-md","medicalName": "นพ.สมชาย หลีค้า", "medicalImg" : "images/specialized-clinic-img/img-doctor-SomChai-bg-white.png"},
+            ])
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="section-container">
-  asdf
-</section>
+  <div class="container">
+    <div class="row text-lefe">
+      <div class="col-12">
+        <h2 class="service-title">คลินิกเฉพาะทาง อื่นๆ</h2>
+      </div>
+    </div>
 
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper special-clinic">
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row justify-content-center" style="text-align: -webkit-center">
+              @@loop('blocks/clinic-service-other-item.htm', [
+               {"css":"col-12 col-md", "title": "อวัยวะเพศชาย","imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Penis.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Penis-Over.png"},
+               {"css":"col-12 col-md", "title": "อวัยวะเพศหญิง", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Clitoris.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Clitoris-Over.png"},
+               {"css":"col-12 col-md", "title": "มดลูก - รังไข่", "imgLogo": "images/specialized-clinic-icon/icon-Uterus-Ovarian-Clinic.png", "imgActive": "images/specialized-clinic-icon/icon-Uterus-Ovarian-Clinic-Over.png"},
+               {"css":"col-12 col-md", "title": "ตั้งครรภ์ มีบุตรยาก", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Pregnant.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Pregnant-Over.png"},
+               {"css":"col-12 col-md", "title": "ฝากครรภ์", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Prenatal-Care.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Prenatal-Care-Over.png"}
+              ])
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row justify-content-center" style="text-align: -webkit-center">
+              @@loop('blocks/clinic-service-other-item.htm', [
+              {"css":"col-12 col-md", "title": "คลอดบุตร", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Giving-Birth.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Giving-Birth-Over.png"},
+              {"css":"col-12 col-md", "title": "ทารกแรกเกิด", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Infant.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Infant-Over.png"},
+              {"css":"col-12 col-md", "title": "โรคในเด็ก", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Children-Diseases.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Children-Diseases-Over.png"},
+              {"css":"col-12 col-md", "title": "พัฒนาการ", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Development.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Development-Over.png"},
+              {"css":"col-12 col-md", "title": "วัคซีน", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Children-Vaccine.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Children-Vaccine-Over.png"}
+              ])
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row justify-content-center" style="text-align: -webkit-center">
+              @@loop('blocks/clinic-service-other-item.htm', [
+              {"css":"col-12 col-md", "title": "ข้ออักเสบ - ข้อเสื่อม", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Children-Arthritis-Osteoarthritis.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Children-Arthritis-Osteoarthritis-Over.png"},
+              {"css":"col-12 col-md", "title": "ต้อเนื้อ - ต้อกระจก", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Children-Pterygium-Cataract.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Children-Pterygium-Cataract-Over.png"},
+              {"css":"col-12 col-md", "title": "NCD เบาหวาน ความดัน ไข้มัน", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-NCD-Diabetes-Pressure.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-NCD-Diabetes-Pressure-Over.png"},
+              {"css":"col-12 col-md", "title": "ภูมิแพ้", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Allergy.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Allergy-Over.png"},
+              {"css":"col-12 col-md", "title": "ภาพถ่ายรังสี", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Radiograph.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Radiograph-Over.png"}
+              ])
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row justify-content-center" style="text-align: -webkit-center">
+              @@loop('blocks/clinic-service-other-item.htm', [
+              {"css":"col-12 col-md", "title": "ตรวจสุขภาพ", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Health-Check.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Health-Check-Over.png"},
+              {"css":"col-12 col-md", "title": "บาดแผลและอุบัติเหตุ", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Wounds-Accidents.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Wounds-Accidents-Over.png"},
+              {"css":"col-12 col-md", "title": "อุปกรณ์ช่วยเดิน", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Walking-Aids.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Walking-Aids-Over.png"},
+              {"css":"col-12 col-md", "title": "ทำแผลเรื้อรัง", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Treat-Chronic-Wounds.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Treat-Chronic-Wounds-Over.png"},
+              {"css":"col-12 col-md", "title": "กายภาพบำบัด", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Physical-Therapy.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Physical-Therapy-Over.png"}
+              ])
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row justify-content-center" style="text-align: -webkit-center">
+              @@loop('blocks/clinic-service-other-item.htm', [
+              {"css":"col-12 col-md", "title": "เส้นผมและหนังศรีษะ", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Hair-Scalp.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Hair-Scalp-Over.png"},
+              {"css":"col-12 col-md", "title": "สมอง", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Brain.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Brain-Over.png"},
+              {"css":"col-12 col-md", "title": "ตา", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Eye.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Eye-Over.png"},
+              {"css":"col-12 col-md", "title": "หูและการได้ยิน", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Ears-Hearing.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Ears-Hearing-Over.png"},
+              {"css":"col-12 col-md", "title": "จมูก", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Nose.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Nose-Over.png"}
+              ])
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row justify-content-center" style="text-align: -webkit-center">
+              @@loop('blocks/clinic-service-other-item.htm', [
+              {"css":"col-12 col-md", "title": "คอ", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Neck.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Neck-Over.png"},
+              {"css":"col-12 col-md", "title": "ต่อมไทรอยด์", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Thyroid-Gland.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Thyroid-Gland-Over.png"},
+              {"css":"col-12 col-md", "title": "ใบหน้าและผิวหนัง", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Face-Skin.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Face-Skin-Over.png"},
+              {"css":"col-12 col-md", "title": "ฟันและเหงือก", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Teeth-Gums.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Teeth-Gums-Over.png"},
+              {"css":"col-12 col-md", "title": "กระดูกและข้อต่อ", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Bones-Joints.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Bones-Joints-Over.png"}
+              ])
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row justify-content-center" style="text-align: -webkit-center">
+              @@loop('blocks/clinic-service-other-item.htm', [
+              {"css":"col-12 col-md", "title": "กระดูกสันหลัง", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Spine.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Spine-Over.png"},
+              {"css":"col-12 col-md", "title": "ข้อเขา - ข้อสะโพก", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Hip-Joint.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Hip-Joint-Over.png"},
+              {"css":"col-12 col-md", "title": "หัวใจและหลอดเลือด", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Heart-Blood-Vessels.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Heart-Blood-Vessels-Over.png"},
+              {"css":"col-12 col-md", "title": "ปอดและทางเดินหายใจ", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Lungs-Respiratory-Tract.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Lungs-Respiratory-Tract-Over.png"},
+              {"css":"col-12 col-md", "title": "เต้านม", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Breast.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Breast-Over.png"}
+              ])
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row justify-content-center" style="text-align: -webkit-center">
+              @@loop('blocks/clinic-service-other-item.htm', [
+              {"css":"col-12 col-md", "title": "หลอดอาหาร - กระเพาะ", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Esophagus-Stomach.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Esophagus-Stomach-Over.png"},
+              {"css":"col-12 col-md", "title": "ตับและถุงน้ำดี", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Liver-Gallbladder.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Liver-Gallbladder-Over.png"},
+              {"css":"col-12 col-md", "title": "ลำไส้และทวารหนัก", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Intestine-Rectum.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Intestine-Rectum-Over.png"},
+              {"css":"col-12 col-md", "title": "ไตและฟอกเลือด", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Kidneys-Dialysis.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Kidneys-Dialysis-Over.png"},
+              {"css":"col-12 col-md", "title": "ท่อปัสสวะ นิ่วและต่อมลุกหมาก", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Urethral-Stones-Prostate.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Urethral-Stones-Prostate-Over.png"}
+              ])
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="container">
+            <div class="row justify" style="text-align: -webkit-center">
+              @@loop('blocks/clinic-service-other-item.htm', [
+              {"css":"col-12 col-md", "title": "ฮอร์โมน - ต่อมไร้ท่อ", "imgLogo": "images/specialized-clinic-icon/icon-Specialized-Clinic-Hormones-Endocrine-Glands.png", "imgActive": "images/specialized-clinic-icon/icon-Specialized-Clinic-Hormones-Endocrine-Glands-Over.png"},
+              ])
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination txt-secondary"></div>
+    </div>
+  </div>
+</section>
 
 @@include('footer.htm')
 <script>
   var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
-      renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (index + 1) + "</span>";
-      },
+      clickable: true
     },
   });
 </script>
