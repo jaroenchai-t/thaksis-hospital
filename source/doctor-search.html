@@ -5,7 +5,7 @@
 <section class="section-container pt-5">
     <div class="container">
 
-        <form>
+        <form class="doctor-search-form">
             <div class="row">
                 <div class="col-12 col-md-6">
                     <div class="form-group text-center">
@@ -74,22 +74,39 @@
         </form>
 
     </div>
-
-    <div class="container">
-        <div class="col-md-6 12">
-            <div class="col-12">
-                @@loop('blocks/doctor-detail-item.htm',
-                [
-                 {"name":"นพ.ภูมิวิชญ์ ขวัญเมือง","title":"ทันตกรรม","desc":"ชำนาญการ รักษารากฟัน","img":"images/team/doctor1.png"}
-                ,{"name":""}
-                ,{"name":""}
-                ])
-            </div>
+    <div class="doctor-swiper swiper swiper-boble-style swiper-package">
+        <div class="swiper-wrapper special-clinic">
+            @@include('blocks/doctor-list-slide.htm')
         </div>
-        <div class="col-md-6 col-12">
-
+        <div class="swiper-pagination txt-secondary mt-5"></div>
+    </div>
+   
+    <div class="doctor-swiper swiper swiper-boble-style swiper-package-mobile">
+        <div class="swiper-wrapper special-clinic">
+            @@include('blocks/doctor-list-slide-mobile.htm')
         </div>
+        <div class="swiper-pagination txt-secondary mt-5"></div>
     </div>
 
 </section>
 @@include('footer.htm')
+<script>
+
+    const swiper3 = new Swiper('.doctor-swiper', {
+        
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
+        },
+      
+      
+      });
+      
+      //
+      
+      
+  </script>
+  
