@@ -1,0 +1,95 @@
+@@include('header.htm')
+@@include('blocks/navigation-1.htm')
+@@include('blocks/specialized-clinic-header.htm',{"title": "บริการทางการแพทย์",
+"text":"นอกจากตรวจวินิจฉัยรักษาผู้ป่วยเรายังมีบริการอื่นๆอีกมากมาย","Url":"images/services/img-Medical-Services-Top-Banner.jpg"})
+<section class="section-container pt-5">
+    <div class="container">
+
+        <form>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="form-group text-center">
+                        <label for="inDoctorName">ค้นหา <span class="text-success">รายชื่อแพทย์ </span> </label>
+                        <img class="icon" src="/images/icon-image/doctor-icon.png">
+                        <input type="text" class="form-control" id="inDoctorName" aria-describedby="emailHelp"
+                            placeholder="รายชื่อแพทย์">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="form-group text-center">
+                        <label for="inDoctorName">ค้นหา <span class="text-success">รายชื่อศูนย์ </span> </label>
+                        <img class="icon" src="/images/icon-image/building-icon.png">
+                        <input type="text" class="form-control" id="inDoctorName" aria-describedby="emailHelp"
+                            placeholder="รายชื่อศูนย์">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="form-group text-center">
+                        <label for="inDoctorName">เลือกวัน <span class="text-success">เข้ารับบริการ </span> </label>
+                        <img class="icon" src="/images/icon-image/calendar-icon.png">
+                        <input type="text" class="form-control date-input" id="inDoctorName"
+                            aria-describedby="emailHelp" placeholder="เลือกวัน">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="form-group text-center">
+                        <label for="inDoctorName">เลือกวัน <span class="text-success">เข้ารับบริการ </span> </label>
+                        <div class="input-group" style="justify-content: space-between;">
+                            <div class="input-group-container" style="width: 44%;">
+                                <img class="icon" src="/images/icon-image/time-icon.png">
+                                <input type="text" class="form-control" placeholder="เวลา">
+                            </div>
+
+                            <div class="input-group-append pl-1 pr-1">
+                                <span class="pl-1 pr-1" style="font-size: 1.5rem;">-</span>
+                            </div>
+                            <div class="input-group-container" style="width: 44%;">
+                                <img class="icon" src="/images/icon-image/time-icon.png">
+                                <input type="text" class="form-control" placeholder="นาที">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3">
+                <div class="col-md-3 b-none">
+
+                </div>
+                <div class="col-md-6 col-12">
+                    <button type="button" class="btn btn-primary btn-lg btn-block">ค้นหาแพทย์</button>
+                </div>
+                <div class="col-md-3 b-none">
+
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+
+    <div class="container">
+        <div class="col-md-6 12">
+            <div class="col-12">
+                @@loop('blocks/doctor-detail-item.htm',
+                [
+                 {"name":"นพ.ภูมิวิชญ์ ขวัญเมือง","title":"ทันตกรรม","desc":"ชำนาญการ รักษารากฟัน","img":"images/team/doctor1.png"}
+                ,{"name":""}
+                ,{"name":""}
+                ])
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+
+        </div>
+    </div>
+
+</section>
+@@include('footer.htm')
