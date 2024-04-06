@@ -479,3 +479,12 @@ a[href^=tel] {
   background-color: #d4edda;
   border-color: #c3e6cb;
 }
+.doctor-search-form{
+  padding-left: 100px;
+  padding-right: 100px;
+  @include desktop {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+}
