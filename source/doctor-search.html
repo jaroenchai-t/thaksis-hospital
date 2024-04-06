@@ -74,79 +74,39 @@
         </form>
 
     </div>
-    <div class="doctor-swiper swiper swiper-boble-style">
+    <div class="doctor-swiper swiper swiper-boble-style swiper-package">
         <div class="swiper-wrapper special-clinic">
-          <div class="swiper-slide">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-12">
-                        <div class="col-12">
-                            @@loop('blocks/doctor-detail-item.htm',
-                            [
-                             {"name":"ทพญ.พิมพ์ชนก ธีรธาดา","title":"ทันตกรรม","desc":"ชำนาญการ รักษารากฟัน","img":"images/team/img-doctor-pimchanok.png"}
-                            ,   {"name":"พญ.ชยาภรณ์ วงศ์เยาว์ฟ้า","title":"กุมารเวชกรรม","desc":"ชำนาญการ กุมารเวชกรรมทั่วไป","img":"images/team/img-doctor-chayaporn.png"}
-                            ,   {"name":"นพ.ฉัตรชัย บุญเฉิด","title":"โสต ศอ นาสิก (หู คอ จมูก)","desc":"ชำนาญการโสต ศอ นาสิก (หู คอ จมูก)","img":"images/team/img-doctor-chatchai.png"}
-                            ])
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="col-12">
-                            @@loop('blocks/doctor-detail-item.htm',
-                            [
-                             {"name":"นพ.ภูมิวิชญ์ ขวัญเมือง","title":"ตรวจสุขภาพ","desc":"ชำนาญการพิเศษ เวชศาสตร์ป้องกัน","img":"images/team/img-doctor-PooMiVit-bg-white.png"}
-                            ,   {"name":"พญ.ศุภลักษณ์ ปลอดเปลียว","title":"รังสี","desc":"ชำนาญการ รังสีวินิจฉัย","img":"images/team/img-doctor-supharak.png"}
-                            ,   {"name":"นพ.สุชาติ เจียมพจมาน","title":"ศัลยศาสตร์ออร์โธปิดิกส์ (โรคกระดูกและข้อ)","desc":"ชำนาญการ ออร์โธปิดิกส์ (โรคกระดูกและข้อ)","img":"images/team/img-doctor-suchard.png"}
-                            ])
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-          </div>
-
-          <div class="swiper-slide">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-12">
-                        <div class="col-12">
-                            @@loop('blocks/doctor-detail-item.htm',
-                            [
-                             {"name":"ทพญ.พิมพ์ชนก ธีรธาดา","title":"ทันตกรรม","desc":"ชำนาญการ รักษารากฟัน","img":"images/team/img-doctor-pimchanok.png"}
-                            ,   {"name":"พญ.ชยาภรณ์ วงศ์เยาว์ฟ้า","title":"กุมารเวชกรรม","desc":"ชำนาญการ กุมารเวชกรรมทั่วไป","img":"images/team/img-doctor-chayaporn.png"}
-                            ,   {"name":"นพ.ฉัตรชัย บุญเฉิด","title":"โสต ศอ นาสิก (หู คอ จมูก)","desc":"ชำนาญการโสต ศอ นาสิก (หู คอ จมูก)","img":"images/team/img-doctor-chatchai.png"}
-                            ])
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-12">
-                        <div class="col-12">
-                            @@loop('blocks/doctor-detail-item.htm',
-                            [
-                             {"name":"นพ.ภูมิวิชญ์ ขวัญเมือง","title":"ตรวจสุขภาพ","desc":"ชำนาญการพิเศษ เวชศาสตร์ป้องกัน","img":"images/team/img-doctor-PooMiVit-bg-white.png"}
-                            ,   {"name":"พญ.ศุภลักษณ์ ปลอดเปลียว","title":"รังสี","desc":"ชำนาญการ รังสีวินิจฉัย","img":"images/team/img-doctor-supharak.png"}
-                            ,   {"name":"นพ.สุชาติ เจียมพจมาน","title":"ศัลยศาสตร์ออร์โธปิดิกส์ (โรคกระดูกและข้อ)","desc":"ชำนาญการ ออร์โธปิดิกส์ (โรคกระดูกและข้อ)","img":"images/team/img-doctor-suchard.png"}
-                            ])
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-          </div>
+            @@include('blocks/doctor-list-slide.htm')
         </div>
         <div class="swiper-pagination txt-secondary mt-5"></div>
     </div>
    
+    <div class="doctor-swiper swiper swiper-boble-style swiper-package-mobile">
+        <div class="swiper-wrapper special-clinic">
+            @@include('blocks/doctor-list-slide-mobile.htm')
+        </div>
+        <div class="swiper-pagination txt-secondary mt-5"></div>
+    </div>
 
 </section>
 @@include('footer.htm')
 <script>
-    var swiper = new Swiper(".doctor-swiper", {
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (index + 1) + "</span>";
+
+    const swiper3 = new Swiper('.doctor-swiper', {
+        
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + (index + 1) + "</span>";
+            },
         },
-      },
-    });
+      
+      
+      });
+      
+      //
+      
+      
   </script>
   
