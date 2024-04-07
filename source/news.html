@@ -4,7 +4,70 @@
 "text":"ข่าวสารและประชาสัมพันธ์จากโรงพยาบาลทักษิน","Url":"images/services/img-Medical-Services-Top-Banner.jpg"})
 <section class="section-container pt-5">
     <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="./images/news/cover-block.png" class="img-fluid">
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="pb-3 d-none d-md-block">
+                    <h2>โรงพยาบาลทักษัณญร่วมกับโรงพยาบาล
+                        สุราษฎร์ธานีร่วมกันจัด"โครงการพัฒนา
+                        ศักยภาพการดูแลผู้ป่วยโรคหัวใจและการ
+
+                        วิเคราะห์คลืนไฟฟ้าหัวใจ"</h2>
+
+                </div>
+                <div>
+                    <p class="text-muted">
+                        พพญ.อุทุมพรกําภูณอยุธยารองผู้อํานวยการฝายการแพทย์ร่วมพิธีเปิดประชุม
+                        วิชาการ"โครงการพัฒนาศักยภาพการดูแลผู้ปวยโรคหัวใจและการวิเคราะห์คลืน
+                        ไฟฟ้าหัวใจ"ซึงโรงพยาบาลทักษิณและโรงพยาบาลสุราษฎร์ธานีร่วมกันจัดขึน
+                        โดยวิทยากรอาจารย์ศุภชัยไตรอุโฆษและคณะในวันที10-12มกราคมพ.ศ.
+                        2567เพื่อให้ผู้เข้ารับการอบรมได้แก่แพทย์พยาบาลและบุคลากรทางการแพทย์
+                        สามารถวิเคราะห์และแปลผลคลืนไฟฟ้าหัวใจทังชนิดปกติผิดปกต..
+                    </p>
+                </div>
+                <div class="d-flex justify-content-start text-muted">
+                    <img height="20px" src="./images/icon-image/calendar-icon.png"> <label class="pl-2 small">17 ก.พ.
+                        2567</label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container pt-5 w-100">
+        <div class="swipper-main">
+            <div class="swiper swiper-grid">
+                <div class="swiper-wrapper">
+                    @@loop('news/news-block-item.htm',[
+                     {},{},{},{},{}
+                    ,{},{},{},{},{}
+                    ,{},{},{},{},{}
+                    ,{},{},{},{},{}
+                    ]);
+                  
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+    
+        </div>
+
+
+    
     </div>
 </section>
 
 @@include('footer.htm')
+<script>
+    var swiper = new Swiper(".swiper-grid", {
+        slidesPerView: 3,
+        grid: {
+            rows: 2,
+        },
+        spaceBetween: 30,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+    });
+</script>

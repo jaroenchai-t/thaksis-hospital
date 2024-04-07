@@ -2329,6 +2329,7 @@ label {
 }
 /*========= Swiper ===========*/
 .swiper {
+ padding-bottom: 30px;
   /*min-height:350px;*/
   .swiper-slide{
     text-align: -webkit-center;
@@ -2342,9 +2343,7 @@ label {
   }
 }
 
-.swiper-pagination{
-  bottom:0px !important;
-}
+
 .swiper-wrapper{
   padding-bottom:20px;
 }
