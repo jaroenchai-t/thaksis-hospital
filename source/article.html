@@ -6,22 +6,124 @@
     <div class="container">
 
         <div class="row">
-            <div class="col-8">
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Card title</h3>
-                      This is some text within a card body.
-                    </div>
-                  </div>
+            <div class="col-lg-9 col-xl-9 col-md-8 col-12 article-warper">
+                @@loop('articles/article-big.htm',[
+                {
+                "title":"ไวรัสตับอักเสบบี อันตรายที่ป้องกันได้"
+                ,"date":"วันพฤหัสบดีที่ 14 กุมภาพันธ์ พ.ศ. 2567"
+                ,"img":"./images/article2/block1.png"
+                ,"tag1":"โรคตับ, ","tag2":"อายุรกรรม, ","tag3":"การป้องกันโรค"
+                ,"desc":"ไวรัสตับอักเสบบีสามารถทำให้เกิดการอักเสบของตับ แบบเฉียบพลัน หรือแบบเรื้อรังได้ ไวรัสตับอักเสบบีเป็น สาเหตุของโรคตับแข็ง และมะเร็งตับที่สำคัญของโลก อย่างไรก็ดี ปัจจุบันเรามีวัคซีนป้องกันไวรัสตับอักเสบบี ที่ช่วยป้องกันการติดเชื้อไวรัสชนิดนี้ และลดความเสียงที่ จะเกิดภาวะแทรกซ้อนต่าง ๆ ที่จะเกิดตามมา..."
+                }
+                , {
+                "title":"วัคซีนไข้หวัดใหญ่"
+                ,"date":"วันพุธที่ 13 กุมภาพันธ์ พ.ศ. 2567"
+                ,"img":"./images/article2/block2.png"
+                ,"tag1":"วัคซีนไข้หวัดใหญ่, ","tag2":"วัคซีน, ","tag3":"ไข้หวัดใหญ่"
+                ,"desc":"วัคซีนไข้หวัดใหญ่ ใช้สำหรับป้องกันโรคไข้หวัดใหญ่ที่เกิด จากเชื้อไวรัสไข้หวัดใหญ่ชนิดสายพันธุ์ A และ B ที่มีแนว โน้มทำให้เกิดการระบาดในช่วงหน้าฝน โดยวัคซีนป้องกัน ไข้หวัดใหญ่จะไปกระตุ้นการสร้างภูมิคุ้มกันของร่างกายที่ มีต่อเชื้อไวรัสไข้หวัดใหญ่ ความแตกต่างของวัคซีนไข้ หวัดใหญ่ชนิด 3 สายพันธุ์และ 4 สายพันธุ์..."
+                } ,{
+                    "title":"ภาวะไขมันในเลือดสูง"
+                    ,"date":"วันอังคารที่ 12 กุมภาพันธ์ พ.ศ. 2567"
+                    ,"img":"./images/article2/block3.png"
+                    ,"tag1":"ไขมันในเลือดสูง, ","tag2":"ไขมันอุดตัน, ","tag3":"เส้นเลือดตีบ"
+                    ,"desc":"ไขมันในเลือดสูง คือภาวะที่ร่างกายมีระดับไขมันในเลือด สูงกว่าเกณฑ์ปกติ โดยอาจมีความผิดปกติทั้งไขมัน \"คอเลสเตอรอล\" และ \"ไตรกลีเซอไรด์\" ซึ่งเป็นปัจจัยเสี่ยง ต่อการเกิดโรคต่างๆ เช่น โรคหัวใจและหลอดเลือด เส้น เลือดตีบ อุดตัน โรคหลอดเลือดสมอง หรือเลือดไหล เวียนไปเลี้ยงอวัยวะต่างๆ ได้ไม่มีดีพอ..."
+                }
+                , {
+                    "title":"การตรวจสมรรถภาพหัวใจขณะออกกำลังกาย (EST) คืออะไร?"
+                    ,"date":"วันจันทร์ที่ 11 กุมภาพันธ์ พ.ศ. 2567"
+                    ,"img":"./images/article2/block4.png"
+                    ,"tag1":"ตรวจสมรรถภาพหัวใจ, ","tag2":"หัวใจ, ","tag3":"ออกกำลังกาย"
+                    ,"desc":"การตรวจสมรรถภาพหัวใจขณะออกกำลังกาย EST (Exercise Stress Test) คือการตรวจคลืนไฟฟ้าหัวใจ ขณะทำงานหนัก โดยการกระตุ้นให้หัวใจเต้นเร็วขึ้นเหมือน ขณะออกกำลังกายด้วยการเดินบนลู่วิ่ง (Treadmill) หรือขี่จักรยานอยู่กับที่ (cycling) ซึ่งจะได้ข้อมูลการ ตรวจเป็นกราฟคลื่นไฟฟ้าหัวใจ ที่สามารถนำมา..."
+                }
+                , {
+                        "title":"การตรวจสุขภาพทางอาชีวเวชศาสตร์"
+                        ,"date":"วันอาทิตย์ที่ 10 กุมภาพันธ์ พ.ศ. 2567"
+                        ,"img":"./images/article2/block5.png"
+                        ,"tag1":"การตรวจสุขภาพ, ","tag2":"อาชีวเวชศาสตร์, ","tag3":""
+                        ,"desc":"การตรวจสุขภาพทางอาชีวเวชศาสตร์ คือการตรวจเพื่อ ดูความพร้อมของร่างกายและจิตใจคนทำงาน เมื่อจะให้ไป ทำงานที่ค่อนข้างมีความเสี่ยงกว่าปกติทั่วไปบางอย่าง เช่น งานบนแท่นขุดเจาะแก๊สในทะเล (fitness for work offshore) งานในที่อับ..."
+                }
+                ])
+               
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <div class="card-body">
-                      This is some text within a card body.
-                    </div>
-                  </div>
+            <div class="d-none d-md-block col-md-4 col-lg-3 col-xl-3 article-warper">
+                <h4 class="text-muted">บทความยอดนิยม</h4>
+                @@loop('articles/article-small.htm',[
+                {"title":"คุณมีภาวะ...ขาดวิตามินดี หรือไม่?","img":"./images/article2/left-block1.png","desc":"ระดับวิตามินดีในเลือด 25(OH)D น้อยกว่า 20 ng/mL ถือว่ามีภาวะขาด..."}
+                , {"title":"ทำไม ต้องตรวจความหนาแน่นของมวลกระดูก?","img":"./images/article2/left-block2.png","desc":"จะทำให้ทราบได้ว่า กระดูกของเราแข็งแรงมากน้อยแค่ไหน..."}
+                , {"title":"การตรวจหัวใจด้วยเครื่องสะท้อนเสียงความถี่สูง (ECHOCARDIOGRAM)","img":"./images/article2/left-block3.png","desc":"คือการส่งคลื่นเสียงที่ปลอดภัยเข้าไปยังบริเวณทรวงอก จากนั้น..."}
+                ])
+
+                <div class="article-item-sx d-none">
+                    <div class="card border-0">
+                       
+                        <div class="card-body article-block">
+                            <h3 class="text-muted card-title">ป้ายกำกับ</h3>
+                            <div class="txt-secondary suggest-tag d-flex flex-wrap">
+                                <a>วัคซีนไข้หวัดใหญ่</a> <a>ไขมันอุดตัน</a> <a data-text-size="medium">ไข้หวัดใหญ่</a>
+                                <a>โรคตับ</a> <a data-text-size="large">หัวใจ</a> <a>อายุรกรรม</a> <a>การป้องกันโรค</a>
+                                <a>ไขมันในเลือดสูง</a> <a data-text-size="large">เส้นเลือดตีบ</a> <a data-text-size="medium">วัคซีน</a>
+                                <a>ตรวจสมรรถภาพหัวใจ</a> <a data-text-size="large">ออกกำลังกาย</a>
+                                <a data-text-size="medium">การตรวจสุขภาพ</a> <a>อาชีวเวชศาสตร</a>
+                            </div>
+                           
+                        </div>
+                      </div>
+                </div>
+
+
+                <div class="article-item-sx  d-none">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="./images/article2/ads1.png" >
+                     
+                      </div>
+                </div>
+                <div class="article-item-sx  d-none">
+                    <div class="card border-0">
+                        <img class="card-img-top" src="./images/article2/ads2.png" >
+                     
+                      </div>
+                </div>
+                
+
             </div>
+
+            <div class="b-block d-md-none pt-5 doctor-swiper swiper wiper-package-mobile">
+                <div class="swiper-wrapper special-clinic">
+                    @@loop('articles/article-small.htm',[
+                {"css":"swiper-slide pl-5 pr-5", "title":"คุณมีภาวะ...ขาดวิตามินดี หรือไม่?","img":"./images/article2/left-block1.png","desc":"ระดับวิตามินดีในเลือด 25(OH)D น้อยกว่า 20 ng/mL ถือว่ามีภาวะขาด..."}
+                , {"css":"swiper-slide pl-5 pr-5","title":"ทำไม ต้องตรวจความหนาแน่นของมวลกระดูก?","img":"./images/article2/left-block2.png","desc":"จะทำให้ทราบได้ว่า กระดูกของเราแข็งแรงมากน้อยแค่ไหน..."}
+                , {"css":"swiper-slide pl-5 pr-5","title":"การตรวจหัวใจด้วยเครื่องสะท้อนเสียงความถี่สูง (ECHOCARDIOGRAM)","img":"./images/article2/left-block3.png","desc":"คือการส่งคลื่นเสียงที่ปลอดภัยเข้าไปยังบริเวณทรวงอก จากนั้น..."}
+                ])
+                </div>
+                <div class="swiper-pagination txt-secondary"></div>
+            </div>
+
+        </div>
+        <div class="row pt-5">
+        <div class="col-6 text-right pr-5">
+            <a class="atricle-paging">หน้าแรกบทความ</a>
+        </div>
+        <div class="col-6 pl-5">
+            <a class="atricle-paging d-none d-md-block">บทความเก่ากว่า >>></a>
+            <a class="atricle-paging b-block d-md-none">></a>
+        </div>
         </div>
     </div>
 </section>
 @@include('footer.htm')
+<script>
+
+    const swiper3 = new Swiper('.doctor-swiper',{
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            dynamicBullets:true,
+            dynamicMainBullets:1
+          }
+    });
+      
+      //
+      
+      
+  </script>
+  

@@ -68,3 +68,12 @@ h5 {
 .txt-secondary{
   color: $color-secondary !important;
 }
+.article-block{
+  line-height: 1.3rem;
+  font-size: 1rem;
+}
+.suggest-tag{
+  a{
+    padding-right: 0.5rem;
+  }
+}
