@@ -1,0 +1,127 @@
+@@include('header.htm')
+@@include('blocks/navigation-1.htm')
+@@include('blocks/specialized-clinic-header.htm',{"title": "ข่าวสารโรงพยาบาล",
+"text":"ข่าวสารและประชาสัมพันธ์จากโรงพยาบาลทักษิน","Url":"images/services/img-Medical-Services-Top-Banner.jpg"})
+<section class="section-container pt-5">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-9 col-xl-9 col-md-8 col-12 article-warper">
+              <div class="row">
+                <h2 class="card-title">โรงพยาบาลทักษิณร่วมกับโรงพยาบาลสสุราษฎร์ธานีร่วมกันจัด
+                    "โครงการพัฒนาศักยภาพการดูแลผู้ป่วยโรคหัวใจและการวิเคราะห์
+                    คลินไฟฟ้าหัวใจ"</h2>
+                <div class="card col-12 border-0">
+                    <div class="card-body">
+                 
+                      
+                       <div class="row">
+                            <div class="col-12 d-flex justify-content-center">
+                                <img  id="myImg"  src="./images/news/cover-block.png" class="img-fluid">
+                            </div>
+                           
+                       </div>
+                       <div class="row">
+                        <div class="col-12 article-block pt-5" style="font-size: medium;">
+                            พญ.อุทุมพร กําภู ณ อยุธยา รองผู้อํานวยการฝ่ายการแพทย์ ร่วมพิธีเปิดประชุมวิชาการ <span class="text-success">"โครงการพัฒนาศักยภาพการดูป
+                                แลผู้ป่วยโรคหัวใจและการวิเคราะห์คลื่นไฟฟ้าหัวใจ”</span> ซึ่งโรงพยาบาลทักษิณ และ โรงพยาบาลสุราษฎร์ธานี ร่วมกันจัดขึ้นโดย
+                            วิทยากร อาจารย์ศุภชัย ไตรอุโฆษ และคณะ ในวันที่ 10 - 12 มกราคม พ.ศ.2567 เพื่อให้ผู้เข้ารับการอบรม ได้แก่แพทย์
+                            พยาบาล และบุคลากรทางการแพทย์ สามารถวิเคราะห์และแปลผลคลื่นไฟฟ้าหัวใจทังชนิดปกติผิดปกติ<br><br>
+                            โดย คุณละเอียด ทศพล ผู้จัดส่วนการพยาบาลเฉพาะทางโรงพยาบาลทักษิณร่วมบรรยาย ในหัวข้อ "แนวโน้มและผลการดูแล.
+                            รักษาผู้ป่วยโรคหัวใจ และหลอดเลือดในเขตบริการสุขภาพที่ 11
+                            
+                        </div>
+                       </div>
+                       <div class="row pt-5">
+                    
+                        @@loop('news/image-popup.htm',
+                        [
+                        {"img":"./images/news/new-cover2.png"}
+                        ,{"img":"./images/news/new-cover3.png"}
+                        ,{"img":"./images/news/new-cover4.png"}
+                        ,{"img":"./images/news/new-cover5.png"}
+                        ,{"img":"./images/news/new-cover6.png"}
+                        ,{"img":"./images/news/new-cover7.png"}
+                        ,{"img":"./images/news/new-cover8.png"}
+                        ]
+                        )
+                     
+                       
+                      
+                       </div>
+                       <div class="row pt-5">
+                        <div  class="col-12 d-flex flex-row border-bottom">
+                            <img height="20px" src="./images/icon-image/calendar-icon.png">
+                            <label class="pl-2 small">17 ก.พ. 2567</label>
+                            <div class="d-flex flex-row pl-3">
+                                <img height="28px" src="./images/article2/email-icon.png">
+                                <img height="28px" src="./images/article2/facebook-icon.png">
+                                <img height="28px" src="./images/article2/twitter-icon.png">
+                                <img height="28px" src="./images/article2/ig-icon.png">
+                                <img height="28px" src="./images/article2/line-icon.png">
+                            </div>
+                          
+                        </div>
+                           
+                       </div>
+                     
+                    </div>
+                  </div>
+              </div>
+       
+            </div>
+            <div class="d-none d-md-block col-md-4 col-lg-3 col-xl-3 article-warper">
+                <h4 class="text-muted">ข่าวอื่นๆ</h4>
+                @@loop('news/news-block-item.htm',[
+                {"img":"./images/news/new-cover1.png","desc":"โรงพยาบาลมะเร็งสุราษฎร์ธานี ร่วมกับโรงพยาบาลทักษิณและ สมาคมโรคเต้านมแห่ง..."}
+                ,{"img":"./images/news/new-cover2.png","desc":"รพ.ทักษิณจัดประชุมวิชาการ เรื่องการดูแลรักษาระอร515 2024.."}
+                ,{"img":"./images/news/new-cover3.png","desc":"รพทักษิณได้รับการตรวจประเมิน มาตรฐานบริการสถานพยาบาล จากสํานักงานสาธารณสุข..."}
+               
+               
+               ])
+
+
+            </div>
+
+ 
+
+        </div>
+
+    </div>
+</section>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+@@include('footer.htm')
+<script>
+   // Get the modal
+    var modal = document.getElementById("myModal");
+    
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    $('.image-popup-item .img-backDrop').click(function(){
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+ 
+        modal.style.display = "block";
+        modalImg.src =$(this).closest('.image-popup-item').find('.img-fluid').attr("src"); 
+       // captionText.innerHTML = this.alt;
+
+    });
+    
+  
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }
+</script>
+ 
+  
