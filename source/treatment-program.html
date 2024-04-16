@@ -1,82 +1,80 @@
 @@include('header.htm') 
 @@include('blocks/navigation-1.htm')
-@@include('blocks/specialized-clinic-header.htm',{"title": "โปรแกรมตรวจรักษา", "text" : "รวมแพ็กเกจ และโปรโมชั่นดีๆ ในการตรวจรักษา", "Url": "images/specialized-clinic-icon/img-Specialized-Clinic-Top-Banner.jpg"})
-
-<style></style>
+@@include('blocks/specialized-clinic-header.htm',{"title": "โปรแกรมตรวจรักษา", "text" : "รวมแพ็กเกจ และโปรโมชั่นดีๆ ในการตรวจรักษา", "Url": "images/treatment-program-img/img-Treatment-Program-Top-Banner.jpg"})
 
 <section class="section-container pt-5">
-    <div class="container pt-3">
+    <div class="container">
         <div class="row">
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/Birth-program.png","title":"โปรแกรมคลอดเหมาจ่าย","description":"เหมาจ่ายคลอดบุตร สําหรับผู้ที่ฝากครรภ์ครั้งแรกตั้งแต่วันที่ 1 ตุลาคม พ.ศ. 2566-30 กันยายน"})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/TSH-Website-Design-Rhinoplasty.png","title":"แพ็กเกจผ่าตัดเสริมจมูกแบบเปิด","description":"ปรับแก้ไขปัญหาโครงสร้างภายในจมูกเฉพาะบุคคล แก้ปัญหาจมูกสั้น ปลายจมูกไม่เด่น จมูกเอียงผิดรูป"})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"แพ็กเกจวัคซีนไข้เลือดออก","description":"วัคซีนป้องกัน 'ไข้เลือดออกชนิดใหม่' ไข้เลือดออก"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-1.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมคลอดเหมาจ่าย","description":"เหมาจ่ายคลอดบุตร สําหรับผู้ที่ฝากครรภ์ครั้งแรกตั้งแต่วันที่ 1 ตุลาคม พ.ศ. 2566-30 กันยายน"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-2.jpg", "link": "/treatment-program-detail.html", "title":"แพ็กเกจผ่าตัดเสริมจมูกแบบเปิด","description":"ปรับแก้ไขปัญหาโครงสร้างภายในจมูกเฉพาะบุคคล แก้ปัญหาจมูกสั้น ปลายจมูกไม่เด่น จมูกเอียงผิดรูป"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-3.jpg", "link": "/treatment-program-detail.html", "title":"แพ็กเกจวัคซีนไข้เลือดออก","description":"วัคซีนป้องกัน 'ไข้เลือดออกชนิดใหม่' ไข้เลือดออก"})
         </div>
     </div>
 
-    <div class="container pt-3">
+    <div class="container treatment-desktop-row ">
         <div class="row">
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"วัคซีนไข้หวัดใหญ่ สายพันธุ์ ปี 2023","description":"วัคซีนป้องกัน ไข้หวัดใหญ่ สายพันธุ์ล่าสุด ปี 2023 ครอบคลุมไวรัส 4 สายพันธุ์ ทั้งสำหรับเด็ก และผู้ใหญ่"})
-            <div class="col-12 col-md-8 pt-5">
-                <img src="./images/articles/Screenshot 2024-04-09 232131.png" class="img-fluid w-100">
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-4.jpg", "link": "/treatment-program-detail.html", "title":"วัคซีนไข้หวัดใหญ่ สายพันธุ์ ปี 2023","description":"วัคซีนป้องกัน ไข้หวัดใหญ่ สายพันธุ์ล่าสุด ปี 2023 ครอบคลุมไวรัส 4 สายพันธุ์ ทั้งสำหรับเด็ก และผู้ใหญ่"})
+            <div class="col-12 col-md-8">
+                <img src="./images/treatment-program-img/img-Treatment-Program-5.jpg" class="img-fluid w-100">
             </div>
         </div>
     </div>
 
-    <div class="container pt-3">
+    <div class="container treatment-desktop-row ">
         <div class="row">
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/Birth-program.png","title":"แพ็กเกจวัคซีนเด็ก","description":"วัคซีนเด็ก ตั้งแต่อายุ 1 เดือน ถึง 2 ปี 6 เดือน ราคาแพ็กเกจนี้ใช้ได้ ตั้งแต่วันนี้ถึง 31 มีนาคม พ.ศ. 2567"})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/TSH-Website-Design-Rhinoplasty.png","title":"แพ็กเกจผ่าตัดลอกต้อเนื้อ","description":"แพ็กเกจผ่าตัดลอกต้อเนื้อ / แพ็กเกจผ่าตัดสลายต้อ กระจกด้วยคลื่นอัลตราซาวด์ ทำให้ตามองเห็นได้ชัด"})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"พ.ร.บ. คุ้มครอง อุบัติเหตุจากรถ","description":"เจ็บจากรถหมดกังวล ไม่ต้องสำรองจ่าย พ.ร.บ. คุ้มครอง 30,000 บาท อุบัติเหตุจากรถทันที"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-6.jpg", "link": "/treatment-program-detail.html", "title":"แพ็กเกจวัคซีนเด็ก","description":"วัคซีนเด็ก ตั้งแต่อายุ 1 เดือน ถึง 2 ปี 6 เดือน ราคาแพ็กเกจนี้ใช้ได้ ตั้งแต่วันนี้ถึง 31 มีนาคม พ.ศ. 2567"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-7.jpg", "link": "/treatment-program-detail.html", "title":"แพ็กเกจผ่าตัดลอกต้อเนื้อ","description":"แพ็กเกจผ่าตัดลอกต้อเนื้อ / แพ็กเกจผ่าตัดสลายต้อ กระจกด้วยคลื่นอัลตราซาวด์ ทำให้ตามองเห็นได้ชัด"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-8.jpg", "link": "/treatment-program-detail.html", "title":"พ.ร.บ. คุ้มครอง อุบัติเหตุจากรถ","description":"เจ็บจากรถหมดกังวล ไม่ต้องสำรองจ่าย พ.ร.บ. คุ้มครอง 30,000 บาท อุบัติเหตุจากรถทันที"})
         </div>
     </div>
     
-    <div class="container pt-3">
+    <div class="container treatment-desktop-row ">
         <div class="row">
-            <div class="col-12 col-md-8 pt-5">
-                <img src="./images/articles/Screenshot 2024-04-09 232131.png" class="img-fluid w-100">
+            <div class="col-12 col-md-8 ">
+                <img src="./images/treatment-program-img/img-Treatment-Program-9.jpg" class="img-fluid w-100">
             </div>
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"วัคซีนป้องกันโรค มือ เท้า ปาก","description":"วัคซีนป้องกันโรค มือ เท้า ปาก ชนิดรุนแรงจากเชื้อ เอนเทอโรไวรัส 71 หรือ EV 71"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-10.jpg", "link": "/treatment-program-detail.html", "title":"วัคซีนป้องกันโรค มือ เท้า ปาก","description":"วัคซีนป้องกันโรค มือ เท้า ปาก ชนิดรุนแรงจากเชื้อ เอนเทอโรไวรัส 71 หรือ EV 71"})
         </div>
     </div>
 
-    <div class="container pt-3">
+    <div class="container treatment-desktop-row ">
         <div class="row">
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โครงการเบิกจ่ายตรง จากกรมบัญชีกลาง","description":"ข้าราชการอุ่นใจ กับโครงการเบิกจ่ายตรงค่รักษา พยาบาล กับกรมบัญชีกลาง เข้าร่วมโครงการผ่าตัด"})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจสุขภาพประจำปี 2566","description":"โปรแกรมตรวจสุขภาพ ประจำปี ตั้งแต่ 3 มกราคม พ.ศ. 2566 - 31 ธันวาคม พ.ศ. 2566"})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจสุขภาพหัวใจ","description":"โปรแกรมตรวจสุขภาพ ประจำปี ตั้งแต่ 3 มกราคม พ.ศ. 2566 - 31 ธันวาคม พ.ศ. 2566"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-11.jpg", "link": "/treatment-program-detail.html", "title":"โครงการเบิกจ่ายตรง จากกรมบัญชีกลาง","description":"ข้าราชการอุ่นใจ กับโครงการเบิกจ่ายตรงค่รักษา พยาบาล กับกรมบัญชีกลาง เข้าร่วมโครงการผ่าตัด"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-12.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจสุขภาพประจำปี 2566","description":"โปรแกรมตรวจสุขภาพ ประจำปี ตั้งแต่ 3 มกราคม พ.ศ. 2566 - 31 ธันวาคม พ.ศ. 2566"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-13.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจสุขภาพหัวใจ","description":"โปรแกรมตรวจสุขภาพ ประจำปี ตั้งแต่ 3 มกราคม พ.ศ. 2566 - 31 ธันวาคม พ.ศ. 2566"})
         </div>
     </div>
 
-    <div class="container pt-3">
+    <div class="container treatment-desktop-row ">
         <div class="row">
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจคัดกรองมะเร็ง","description":"ตรวจร่างกายโดยแพทย์ ตรวจค่ามะเร็งตับ มะเร็ง ต่อมลูกหมาก มะเร็งลำใส้ใหญ่ มะเร็งปากมดลูก..."})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจค้นหาโรคตับ","description":"ตรวจค้นหาโรคตับ (Malignancy Screening) การทำงานของตับ ไวรัสตับอักเสบต่างๆ ประจำปี..."})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจค้นหาโรคไต","description":"ตรวจค้นหาโรคไต ตรวจปัสสาวะ การทำงานของไต อัลตราชาวด์ ระบบทางเดินปัสสาวะ"})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-14.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจคัดกรองมะเร็ง","description":"ตรวจร่างกายโดยแพทย์ ตรวจค่ามะเร็งตับ มะเร็ง ต่อมลูกหมาก มะเร็งลำใส้ใหญ่ มะเร็งปากมดลูก..."})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-15.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจค้นหาโรคตับ","description":"ตรวจค้นหาโรคตับ (Malignancy Screening) การทำงานของตับ ไวรัสตับอักเสบต่างๆ ประจำปี..."})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-16.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจค้นหาโรคไต","description":"ตรวจค้นหาโรคไต ตรวจปัสสาวะ การทำงานของไต อัลตราชาวด์ ระบบทางเดินปัสสาวะ"})
         </div>
     </div>
 
-    <div class="container pt-3">
+    <div class="container treatment-desktop-row ">
         <div class="row">
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจค้นหาโรคไทรอยด์","description":"ตรวจค้นหาโรคไทรอยด์ ตรวจร่างกาย ตรวจการทำงานของต่อมไทรอยด์ อัลตราซาวด์ต่อมไทรอยด์..."})
-            <div class="col-12 col-md-8 pt-5">
-                <img src="./images/articles/Screenshot 2024-04-09 232131.png" class="img-fluid w-100">
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-17.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจค้นหาโรคไทรอยด์","description":"ตรวจค้นหาโรคไทรอยด์ ตรวจร่างกาย ตรวจการทำงานของต่อมไทรอยด์ อัลตราซาวด์ต่อมไทรอยด์..."})
+            <div class="col-12 col-md-8">
+                <img src="./images/treatment-program-img/img-Treatment-Program-18.jpg" class="img-fluid w-100">
             </div>
         </div>
     </div>
 
-    <div class="container pt-3">
+    <div class="container treatment-desktop-row ">
         <div class="row">
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจสุขภาพกระดูก","description":"ตรวจสุขภาพและสรุปผลโดยแพทย์ ระดับแคลเซี่ยมในเลือด ระดับวิตามินดีในเลือด ฟอสเฟตในเลือด..."})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจผู้ปฏิบัติงานในพื้นที่สูง","description":"ตรวจสุขภาพโดยแพทย์อาชีวเวชศาสตร์ (PE) วัดความดันโลหิต ชีพจร ชั่งน้ำหนัก ส่วนสูง คำนวน..."})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจผู้ปฏิบัติงานในพื้นที่อับอากาศ","description":"ตรวจสุขภาพโดยแพทย์อาชีวเวชศาสตร์ (PE) วัดความดันโลหิต ชีพจร ชั่งน้ำหนัก ส่วนสูง คำนวน..."})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-19.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจสุขภาพกระดูก","description":"ตรวจสุขภาพและสรุปผลโดยแพทย์ ระดับแคลเซี่ยมในเลือด ระดับวิตามินดีในเลือด ฟอสเฟตในเลือด..."})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-20.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจผู้ปฏิบัติงานในพื้นที่สูง","description":"ตรวจสุขภาพโดยแพทย์อาชีวเวชศาสตร์ (PE) วัดความดันโลหิต ชีพจร ชั่งน้ำหนัก ส่วนสูง คำนวน..."})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-21.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจผู้ปฏิบัติงานในพื้นที่อับอากาศ","description":"ตรวจสุขภาพโดยแพทย์อาชีวเวชศาสตร์ (PE) วัดความดันโลหิต ชีพจร ชั่งน้ำหนัก ส่วนสูง คำนวน..."})
         </div>
     </div>
 
-    <div class="container pt-3">
+    <div class="container treatment-desktop-row ">
         <div class="row">
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"วัคซีนป้องกันมะเร็งปากมดลูก HPV","description":"HPV ไวรัสร้าย ป้องกันได้ตั้งแต่วัยรุ่น วัคซีนป้องกันมะเร็งปาดมดลูก HPV มีตั้งแต่เด็กอายุ 9-14 ปี..."})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"อบ-ประคบ-นวด-ทำความสะอาดเปลือกตา","description":"EYELID SPA TREATMENT อบ-ประคบ-นวด-ทำความสะอาดเปลือกตา ผู้มีปัญหาตาแห้งเรื้อรัง ต่อม..."})
-            @@include('blocks/treatment-program-item.htm',{"img-main":"images/articles/dengue fever.png","title":"โปรแกรมตรวจสุขภาพดวงตา","description":"ตรวจสุขภาพดวงตา ระดับการมองเห็น ความดันลูกตา วัดค่าสายตาด้วยเครื่องคอมพิวเตอร์ ตรวจตา..."})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-22.jpg", "link": "/treatment-program-detail.html", "title":"วัคซีนป้องกันมะเร็งปากมดลูก HPV","description":"HPV ไวรัสร้าย ป้องกันได้ตั้งแต่วัยรุ่น วัคซีนป้องกันมะเร็งปาดมดลูก HPV มีตั้งแต่เด็กอายุ 9-14 ปี..."})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-23.jpg", "link": "/treatment-program-detail.html", "title":"อบ-ประคบ-นวด-ทำความสะอาดเปลือกตา","description":"EYELID SPA TREATMENT อบ-ประคบ-นวด-ทำความสะอาดเปลือกตา ผู้มีปัญหาตาแห้งเรื้อรัง ต่อม..."})
+            @@include('blocks/treatment-program-item.htm',{"img-main":"images/treatment-program-img/img-Treatment-Program-24.jpg", "link": "/treatment-program-detail.html", "title":"โปรแกรมตรวจสุขภาพดวงตา","description":"ตรวจสุขภาพดวงตา ระดับการมองเห็น ความดันลูกตา วัดค่าสายตาด้วยเครื่องคอมพิวเตอร์ ตรวจตา..."})
         </div>
     </div>
 

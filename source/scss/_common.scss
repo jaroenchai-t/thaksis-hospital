@@ -555,8 +555,8 @@ div.new-small-block{
 }
 .swiper-slide{
   div.new-small-block{
-    width: 20%;
-    padding-bottom: 20px;
+    // width: 20%;
+  padding-bottom: 20px;
    padding-right: 20px;
    display: flex;
    flex-direction: column;
@@ -578,3 +578,58 @@ div.new-small-block{
    
 }
 
+.img_width{
+  width: 380px !important;
+}
+
+
+.program-bonder {
+  position: relative;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: .35rem;
+
+}
+
+.program-bonder-main{
+  background-color: #ebf2fa;
+  border-color: #ebf2fa;
+}
+
+.program-bonder-success{
+  background-color: #d5e9dd;
+  border-color: #d5e9dd;
+}
+
+
+.banner-area-other-program {
+  position: relative;
+  min-height: 420px;
+  color: #fff;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-color: #eff1f0;
+
+  h4 {
+    color: #555555;
+  }
+
+  p {
+    color: #555555;
+  }
+}
+
+
+.treatment-item{
+  @include mobile {
+   padding-top: 3rem;
+  }
+}
+
+.treatment-desktop-row{
+  padding-top: 3rem;
+  @include mobile {
+    padding-top: 0rem;
+   }
+}
