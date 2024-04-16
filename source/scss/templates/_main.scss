@@ -1394,12 +1394,13 @@ img.testimonial-thumb {
   width: 36px;
   height: 36px;
   line-height: 36px;
-  background: rgba(0, 0, 0, 0.9);
+  background: $color-secondary;
   border-radius: 3px;
   color: $color-primary;
   font-weight: 700;
   font-size: 16px;
   padding: 0;
+ 
   @include tablet {
     width: 32px;
     height: 32px;
