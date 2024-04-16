@@ -1,9 +1,9 @@
 {
-  "name": "constra",
+  "name": "thaksin-hospital",
   "version": "2.1.0",
-  "description": "constra free construction template",
-  "author": "Themefisher",
-  "license": "MIT",
+  "description": "thaksin-hospital template",
+  "author": "thaksin-hospital",
+ 
   "scripts": {
     "dev": "gulp",
     "build": "gulp build"
