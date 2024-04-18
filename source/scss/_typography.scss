@@ -81,3 +81,26 @@ h5 {
 .line-height{
   line-height: 1.25rem;
 }
+
+.treatment-header{
+
+   @include mobile {
+    font-size: 2rem;
+    padding-top: 30px;
+   }
+   
+}
+.treatment-contant-mobile{
+  display: none;
+  @include mobile {
+    display: block;
+  }
+  
+ }
+ .treatment-contant-desktop{
+  display: block;
+  @include mobile {
+    display: none;
+  }
+  
+ }
