@@ -1,0 +1,254 @@
+@@include('header.htm') @@include('blocks/navigation-1.htm')
+@@include('blocks/specialized-clinic-header.htm',{"title": "ค้นหาแพทย์",
+"text":"หาแพทย์ผู้เชี่ยวชาญ เพื่อนัดวันเข้ารักษาพยาบาล","Url":"images/team/img-Search-Doctor-Top-Banner.jpg"})
+
+<section class="section-container mt-5">
+    <div class="container d-flex justify-content-center ">
+        <img width="300px" src="images/team/img-doctor-PooMiVit-bg-blue.png">
+    </div>
+</section>
+
+<section class="section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 pt-5">
+                <div class="col-12 ml-1 mr-1">
+                  <h2>นพ.ภูมิวิชญ์ ขวัญเมือง</h2>
+                  <h4 class="pb-2" style="color: #555555">ตรวจสุขภาพ</h4>
+                  <hr class="p-0 m-0  hr-green-line">
+                  <h4 class="pt-3 pb-0" style="color: #555555">
+                    <span class="text-success">ชำนาญการพิเศษ</span>
+                    <br> เวชศาสตร์ป้องกัน แขนงเวชศาสตร์ป้องกันคลินิก
+                  </h4>
+                </div>
+                
+                <div class="col-12">
+                  <div class="ml-1 mr-1 program-bonder program-bonder-muted">
+                    <div class="col-12 pt-0 pt-lg-3 pb-3">
+                      <div class="pb-1">
+                        <h4 class="text-success ">ประวัติการศึกษา</h4> 
+                      </div>
+                      
+                      <table>
+                        <tr>
+                          <td class="align-top " style="max-width: 60px; min-width: 60px;"><h4 style="color:#555555">2555</h4></td>
+                          <td class="align-top " style="max-width: 100%;"><h4 style="color:#555555">วุฒิบัตรผู้เชี่ยวชาญสาขาอายุรศาสตร์ <br> โรงพยาบาลพระมงกุฎเกล้า</h4></td>
+                        </tr>
+                        <tr>
+                          <td class="align-top " style="max-width: 60px; min-width: 60px;"><h4 style="color:#555555">2549</h4></td>
+                          <td class="align-top " style="max-width: 100%;"><h4 style="color:#555555">แพทย์ศาสตร์บัณฑิต คณะแพทย์ศาสตร์ <br> มหาวิทยาลัยมหิดล</h4></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6 pt-5">
+              <div class="col-12 ml-1 mr-1">
+                <h2>DR.POMVIT KWUNMUEANG</h2>
+                <h4 class="pb-2 text-capitalize" style="color: #555555">Health Check</h4>
+                <hr class="p-0 m-0  hr-green-line">
+                <h4 class="pt-3 pb-0 text-capitalize" style="color: #555555">
+                  <span class="text-success">Special Expertise</span>
+                  <br> Preventive Medicine Clinical Preventive Medicine Branch
+                </h4>
+              </div>
+              
+              <div class="col-12">
+                <div class="pr-2 ml-1 mr-1 program-bonder program-bonder-main">
+                  <div class="col-12 pt-0 pt-lg-3 pb-3">
+                    <div>
+                      <h4 class="text-success ">ตารางปฏิบัติงาน</h4> 
+                    </div>
+                    
+                    <div class="col-12 p-0">
+                      <div class="bg-white mt-2 p-1">
+                        <p class="pl-2" style="margin: 0; padding: 0">
+                          วันศุกร์ |
+                          <span class="text-success">08.30 - 14.00 น.</span>
+                        </p>
+                      </div>
+        
+                      <div class="bg-white mt-2 p-1">
+                        <p class="pl-2" style="margin: 0; padding: 0">
+                          วันเสาร์ |
+                          <span class="text-success">08.30 - 12.00 น.</span>
+                        </p>
+                      </div>
+        
+                      <div class="bg-white mb-1 mt-2 p-1">
+                        <p class="pl-2" style="margin: 0; padding: 0">
+                          วันอาทิตย์ |
+                          <span class="text-success">08.30 - 12.00 น.</span> 
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="container">
+          <div class="row d-flex justify-content-center pt-3 pl-1 pr-1">
+            <h4>
+                <span class="text-danger">*กรุณาสอบถาม </span> 
+                <span style="color: #555555">ตารางการออกตรวจแพทย์ทุกครั้ง ก่อนเข้ารับบริการ </span><span class="text-success">ติดต่อสอบถาม </span> <span>077-278-777</span> ต่อ <span>4110 , 4112</span>
+            </h4>
+          </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-container mt-5 banner-area-other-program">
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-12 mt-5 pt-2">
+          <h4 style="font-size: 1.5rem;">แพทย์แผนกเดียวกัน</h4>
+        </div>
+      </div>
+  
+      <div class="swiper doctorSwiper">
+        <div class="swiper-wrapper">
+            @@loop('blocks/medical-team.htm', [
+              {"cssSwiper":"swiper-slide mt-4", "css":"col-12 col-md","medicalName": "พญ.สุภาภรณ์ ศักดาพันธุ์ไพศาล", "medicalImg" : "images/team/img-Doctor-Supapon-bg-blue.png"},
+              {"cssSwiper":"swiper-slide mt-4", "css":"col-12 col-md","medicalName": "พญ.วิมลิน โชคชัยกวิน", "medicalImg" : "images/team/img-Doctor-Vimlin-bg-blue.png"},
+              {"cssSwiper":"swiper-slide mt-4", "css":"col-12 col-md","medicalName": "พญ.ธนัฏฐา ศิรสวัสดิ์วรากุล แซ่อึ้ง", "medicalImg" : "images/team/img-Doctor-Tanuttha-bg-blue.png"},
+              {"cssSwiper":"swiper-slide mt-4", "css":"col-12 col-md","medicalName": "นพ.จิม กำภู ณ อยุธยา ", "medicalImg" : "images/team/img-doctor-Jim-Gumpoo-bg-blue.png"},
+              {"cssSwiper":"swiper-slide mt-4", "css":"col-12 col-md","medicalName": "นพ.สมชาย หลีค้า", "medicalImg" : "images/team/img-doctor-SomChai-bg-blue.png"},
+            ])
+        </div>
+        <div class="swiper-pagination txt-secondary"></div>
+      </div>
+  
+    </div>
+  </section>
+
+<section class="section-container mt-5">
+  <div class="container">
+    <form class="doctor-search-form">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="form-group text-center">
+            <label for="inDoctorName"
+              >ค้นหา <span class="text-success">รายชื่อแพทย์ </span>
+            </label>
+            <img class="icon" src="/images/icon-image/doctor-icon.png" />
+            <input
+              type="text"
+              class="form-control"
+              id="inDoctorName"
+              aria-describedby="emailHelp"
+              placeholder="รายชื่อแพทย์"
+            />
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="form-group text-center">
+            <label for="inDoctorName"
+              >ค้นหา <span class="text-success">รายชื่อศูนย์ </span>
+            </label>
+            <img class="icon" src="/images/icon-image/building-icon.png" />
+            <input
+              type="text"
+              class="form-control"
+              id="inDoctorName"
+              aria-describedby="emailHelp"
+              placeholder="รายชื่อศูนย์"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="form-group text-center">
+            <label for="inDoctorName"
+              >เลือกวัน <span class="text-success">เข้ารับบริการ </span>
+            </label>
+            <img class="icon" src="/images/icon-image/calendar-icon.png" />
+            <input
+              type="text"
+              class="form-control date-input"
+              id="inDoctorName"
+              aria-describedby="emailHelp"
+              placeholder="เลือกวัน"
+            />
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="form-group text-center">
+            <label for="inDoctorName"
+              >เลือกวัน <span class="text-success">เข้ารับบริการ </span>
+            </label>
+            <div class="input-group" style="justify-content: space-between">
+              <div class="input-group-container" style="width: 44%">
+                <img class="icon" src="/images/icon-image/time-icon.png" />
+                <input type="text" class="form-control" placeholder="เวลา" />
+              </div>
+
+              <div class="input-group-append pl-1 pr-1">
+                <span class="pl-1 pr-1" style="font-size: 1.5rem">-</span>
+              </div>
+              <div class="input-group-container" style="width: 44%">
+                <img class="icon" src="/images/icon-image/time-icon.png" />
+                <input type="text" class="form-control" placeholder="นาที" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3">
+        <div class="col-md-3 b-none"></div>
+        <div class="col-md-6 col-12">
+          <button type="button" class="btn btn-primary btn-lg btn-block">
+            ค้นหาแพทย์
+          </button>
+        </div>
+        <div class="col-md-3 b-none"></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+@@include('footer.htm')
+<script>
+    const swiper = new Swiper(".doctorSwiper", {
+      slidesPerView:5,
+      direction: 'horizontal',
+      loop: true,
+      spaceBetween: 20,
+      breakpoints: {
+        // when window width is >= 0px
+        0: {
+          slidesPerView: 1,
+    
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 2,
+    
+        },
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 3,
+    
+        },
+         // when window width is >= 800px
+         1200: {
+          slidesPerView: 5,
+    
+        }
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets:true,
+        dynamicMainBullets:1
+      },
+    });
+    
+</script>
