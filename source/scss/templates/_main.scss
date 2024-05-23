@@ -23,16 +23,14 @@
 ================================================== */
 /*-- Main slide --*/
 .banner-carousel .banner-carousel-item {
-  height: 700px;
-  color: #fff;
-  background-position: 50% 50%;
-  background-size: cover;
-  @include desktop {
-    height: 550px;
-  }
-  @include mobile {
-    height: 450px;
-  }
+  width: 100%; /* Adjust this to your needs */
+  padding-top: 50%; /* This creates the 1:2 aspect ratio */
+  background-image: url('../../images/banner/thaksin-main.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensure the image covers the entire container */
+  background-position: center; /* Center the image */
+  display: block; /* Display as block */
+  position: relative; /* Necessary for the padding trick to work */
+  
 }
 
 .slider-content {
@@ -298,6 +296,7 @@
   .action-button-container{
     max-width:310px;
     height:150px;
+    cursor: pointer;
     label{
       font-size: medium;
       text-align:center;
@@ -2295,6 +2294,7 @@ label {
 }
 
 .clinic-service{
+  cursor: pointer;
   max-width:280px;
   .font-weight-bold{
     padding-top:10px;
@@ -2359,8 +2359,9 @@ label {
 .articles-swiper{
  /* min-height:400px; */
 }
-
+ 
 .clinic-service-2:hover{
+  cursor: pointer;
 .font-weight-bold{
   color:$color-secondary;
 
